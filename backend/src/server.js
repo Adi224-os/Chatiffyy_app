@@ -16,6 +16,8 @@ const PORT = process.env.PORT || 3000;
 
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
+app.use(express.json()); //extra added by gpt suggestion
+
 
 
 // make ready for deployment
@@ -30,4 +32,4 @@ if(process.env.NODE_ENV === "production"){
 app.listen(PORT, () => {
     console.log("Server running on port: " + PORT)
     connectDB();
-})
+});
