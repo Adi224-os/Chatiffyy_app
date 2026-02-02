@@ -2,7 +2,7 @@
 import { useState } from "react";
 import {useAuthStore} from "../store/useAuthStore";
 import BorderAnimatedContainer from "../components/BorderAnimatedContainer";
-import {MessageCircleIcon, LockIcon, MailIcon, UserIcon, LoaderIcon, Mail} from "lucide-react";
+import {MessageCircleIcon, LockIcon, MailIcon, UserIcon, LoaderIcon} from "lucide-react";
 import {Link} from "react-router";    
 
 function SignUpPage() {
@@ -16,7 +16,7 @@ function SignUpPage() {
     }
     return (
     <div className="w-full flex items-center justify-center p-4 bg-slate-900">
-      <div className="relative w-full max-w-6xl md:h-[650px] h-[650px]">
+      <div className="relative w-full max-w-6xl md:h-[750px] h-[650px]">
         <BorderAnimatedContainer>
           <div className="w-full flex flex-col md:flex-row">
             {/*Form column - Left Side */}
